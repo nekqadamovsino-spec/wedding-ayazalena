@@ -44,3 +44,10 @@ form.addEventListener('submit', async (e)=>{
     statusEl.textContent = 'Ошибка отправки. Попробуйте позже.';
   }
 });
+const bgMusic = document.getElementById('bgMusic');
+
+document.addEventListener('click', function () {
+    if (bgMusic.paused) {
+        bgMusic.play().catch(err => console.log(err));
+    }
+}, { once: true });
