@@ -45,16 +45,18 @@ form.addEventListener('submit', async (e)=>{
   }
 });
 window.addEventListener('load', () => {
-    const bgMusic = document.getElementById('bgMusic');
-    const musicBtn = document.getElementById('musicBtn');
+  const bgMusic = document.getElementById('bgMusic');
+  const musicBtn = document.getElementById('musicBtn');
 
+  if (bgMusic && musicBtn) {
     musicBtn.addEventListener('click', () => {
-        if (bgMusic.paused) {
-            bgMusic.play();
-            musicBtn.textContent = '⏸';
-        } else {
-            bgMusic.pause();
-            musicBtn.textContent = '🎵';
-        }
+      if (bgMusic.paused) {
+        bgMusic.play();
+        musicBtn.textContent = '⏸';
+      } else {
+        bgMusic.pause();
+        musicBtn.textContent = '🎵';
+      }
     });
+  }
 });
