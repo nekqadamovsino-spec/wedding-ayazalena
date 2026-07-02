@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Аяз & Алёна — свадебное приглашение</title>
+  <meta name="description" content="Приглашение на свадьбу Аяза и Алёны — 04.09.2026" />
+  <meta property="og:title" content="Аяз & Алёна" />
+  <meta property="og:description" content="4 сентября 2026 — свадебное приглашение" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="video-bg">
+    <video autoplay muted loop playsinline preload="auto">
+        <source src="assets/video/silk.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+</div>
+  <div class="grain"></div>
+
+  <main>
+    <section class="screen hero">
+      <div class="silk"></div>
+      <div class="inner hero-inner reveal">
+        <p class="overline">приглашение на свадьбу</p>
+        <h1>Аяз<br><span>&</span><br>Алёна</h1>
+        <div class="date-block">
+          <span>сентябрь</span>
+          <strong>4</strong>
+          <span>2026</span>
+        </div>
+        <a href="#invite" class="down">⌄</a>
+      </div>
+    </section>
+
+    <section class="screen invite" id="invite">
+      <div class="inner narrow reveal">
+        <h2>Дорогие гости</h2>
+        <p>В нашей жизни предстоят счастливые перемены! Мы хотим, чтобы в этот день рядом с нами были самые близкие и дорогие для нас люди.</p>
+        <p>Мы рады пригласить Вас стать свидетелями этого торжества и разделить с нами самые яркие моменты.</p>
+      </div>
+    </section>
+
+    <section class="screen calendar-section">
+      <div class="inner reveal">
+        <p class="overline">save the date</p>
+        <h2>4 сентября 2026</h2>
+        <div class="calendar">
+          <div>ПН</div><div>ВТ</div><div>СР</div><div>ЧТ</div><div>ПТ</div><div>СБ</div><div>ВС</div>
+          <span></span><span>1</span><span>2</span><span>3</span><span class="active">4</span><span>5</span><span>6</span>
+          <span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span>
+          <span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span>
+          <span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span>
+          <span>28</span><span>29</span><span>30</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen location">
+      <div class="inner card reveal">
+        <h2>Локация</h2>
+        <p class="script">Банкетный зал «Emerald Hall»</p>
+        <div class="place">
+          <p>Казань, ул. Гаврилова, 32</p>
+        </div>
+
+        <img class="location-photo" src="banket.jpg" alt="Emerald Hall">
+
+        <a class="map-btn"
+           target="_blank"
+           href="https://yandex.ru/maps/?text=Казань,%20Гаврилова,%2032,%20Emerald%20Hall">
+            📍 Открыть карту
+        </a>
+      </div>
+    </section>
+
+    <section class="screen program">
+      <div class="inner reveal">
+        <h2>Программа дня</h2>
+        <div class="timeline">
+          <div class="item"><b>16:00</b><span>Сбор гостей</span><p>Встречаемся, знакомимся и настраиваемся на красивый вечер.</p></div>
+          <div class="item"><b>16:30</b><span>Регистрация брака</span><p>Торжественная регистрация брака.</p></div>
+          <div class="item"><b>17:30</b><span>Банкет</span><p>Праздничный ужин, поздравления и танцы.</p></div>
+          <div class="item"><b>22:00</b><span>Завершение дня</span><p>Тёплое окончание нашего свадебного вечера.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen dress">
+      <div class="inner card reveal">
+        <h2>Dress <em>Code</em></h2>
+        <p>Соблюдение дресс-кода не обязательно, но нам будет приятно, если вы поддержите стилистику торжества в нежных оттенках.</p>
+        <p>Просим воздержаться от ярких цветов, таких как белый, красный и зелёный.</p>
+        <div class="palette">
+          <span title="Нежно-бежевый"></span>
+          <span title="Нежно-коричневый"></span>
+          <span title="Голубой"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen timer-section">
+      <div class="inner reveal">
+        <p class="overline">до свадьбы осталось</p>
+        <div class="timer" id="timer">
+          <div><b id="days">0</b><span>дней</span></div>
+          <div><b id="hours">0</b><span>часов</span></div>
+          <div><b id="minutes">0</b><span>минут</span></div>
+          <div><b id="seconds">0</b><span>секунд</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen rsvp">
+      <div class="inner card reveal">
+        <h2>Подтвердите присутствие</h2>
+        <p>Пожалуйста, дайте ответ до 10 августа.</p>
+<form id="rsvpForm">
+  <input name="name" placeholder="Ваше имя" required>
+
+  <div class="form-group">
+    <p>Сможете ли присутствовать?</p>
+
+    <label>
+      <input type="radio" name="guest" value="Да" required>
+      Да
+    </label>
+
+    <label>
+      <input type="radio" name="guest" value="К сожалению, не смогу присутствовать">
+      К сожалению, не смогу присутствовать
+    </label>
+  </div>
+
+  <textarea name="comment" placeholder="Комментарий / пожелание"></textarea>
+
+  <button type="submit">Отправить</button>
+</form>
+
+<p class="status" id="status"></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Аяз & Алёна</p>
+      <span>04.09.2026</span>
+    </footer>
+  </main>
+  <script src="script.js?v=3"></script>
+</body>
+</html>
