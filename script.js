@@ -44,17 +44,12 @@ form.addEventListener('submit', async (e)=>{
     statusEl.textContent = 'Ошибка отправки. Попробуйте позже.';
   }
 });
-const bgMusic = document.getElementById('bgMusic');
+window.addEventListener('load', () => {
+    const bgMusic = document.getElementById('bgMusic');
 
-document.addEventListener('click', function () {
-    if (bgMusic.paused) {
-        bgMusic.play().catch(err => console.log(err));
-    }
-}, { once: true });
-const musicBtn = document.getElementById('musicBtn');
-const bgMusic = document.getElementById('bgMusic');
-
-musicBtn.addEventListener('click', function () {
-  bgMusic.play();
-  musicBtn.textContent = '❚❚ Музыка играет';
+    document.addEventListener('click', () => {
+        if (bgMusic && bgMusic.paused) {
+            bgMusic.play().catch(console.error);
+        }
+    }, { once: true });
 });
