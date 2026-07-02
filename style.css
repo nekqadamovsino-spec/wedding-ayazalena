@@ -170,3 +170,17 @@ left:0;
 .dress-gallery img:hover{
     transform:scale(1.05);
 }
+.surprise .card{
+  text-align: center;
+}
+
+.host-contact{
+  margin-top: 22px;
+  font-size: 18px;
+  letter-spacing: .06em;
+}
+
+.host-contact a{
+  color: inherit;
+  text-decoration: none;
+}
