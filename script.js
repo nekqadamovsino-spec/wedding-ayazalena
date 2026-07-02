@@ -46,10 +46,15 @@ form.addEventListener('submit', async (e)=>{
 });
 window.addEventListener('load', () => {
     const bgMusic = document.getElementById('bgMusic');
+    const musicBtn = document.getElementById('musicBtn');
 
-    document.addEventListener('click', () => {
-        if (bgMusic && bgMusic.paused) {
-            bgMusic.play().catch(console.error);
+    musicBtn.addEventListener('click', () => {
+        if (bgMusic.paused) {
+            bgMusic.play();
+            musicBtn.textContent = '⏸';
+        } else {
+            bgMusic.pause();
+            musicBtn.textContent = '🎵';
         }
-    }, { once: true });
+    });
 });
