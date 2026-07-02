@@ -146,6 +146,26 @@ left:0;
     box-shadow:0 6px 18px rgba(0,0,0,.12);
     transition:.3s;
 }
+.music-btn{
+    position: fixed;
+    top: 18px;
+    left: 18px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255,255,255,.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0,0,0,.15);
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 99999;
+    transition: .3s;
+}
+
+.music-btn:hover{
+    transform: scale(1.08);
+}
 
 .dress-gallery img:hover{
     transform:scale(1.05);
