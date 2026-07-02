@@ -51,3 +51,10 @@ document.addEventListener('click', function () {
         bgMusic.play().catch(err => console.log(err));
     }
 }, { once: true });
+const musicBtn = document.getElementById('musicBtn');
+const bgMusic = document.getElementById('bgMusic');
+
+musicBtn.addEventListener('click', function () {
+  bgMusic.play();
+  musicBtn.textContent = '❚❚ Музыка играет';
+});
